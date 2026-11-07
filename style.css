@@ -1,0 +1,31 @@
+:root{--ink:#1c1c28;--mut:#6b6b7b;--bg:#faf9f6;--card:#fff;--acc:#0b6e4f;--line:#e6e3dc}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",sans-serif;
+background:var(--bg);color:var(--ink);direction:rtl;line-height:1.8}
+.wrap{max-width:920px;margin:0 auto;padding:24px 16px}
+header h1{margin:8px 0 4px;font-size:1.5rem}header p{margin:0;color:var(--mut)}
+main h2{font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:6px;margin-top:32px}
+.books{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.book{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;overflow:hidden}
+.book a.t{color:var(--ink);text-decoration:none;font-weight:700;font-size:1.05rem}
+.book a.t:hover{color:var(--acc)}
+.book .a{color:var(--mut);font-size:.92rem}
+.book .d{font-size:.93rem;margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;
+-webkit-box-orient:vertical;overflow:hidden}
+.book img.cover{float:left;width:72px;height:auto;margin:0 0 6px 12px;border-radius:6px;
+border:1px solid var(--line)}
+.tags{margin-top:8px}.tag{display:inline-block;background:#eef4f1;color:var(--acc);
+border-radius:20px;padding:1px 10px;font-size:.8rem;margin:2px}
+.links{margin-top:10px;padding:0;list-style:none}
+.links a{color:var(--acc);text-decoration:none;font-size:.93rem}
+.links a:hover{text-decoration:underline}
+.alpha{columns:2;column-gap:28px;padding-right:0}
+.alpha li{break-inside:avoid;margin:2px 0}
+.alpha a{color:var(--ink);text-decoration:none}.alpha a:hover{color:var(--acc)}
+.crumb{font-size:.9rem;color:var(--mut)}.crumb a{color:var(--acc);text-decoration:none}
+.meta{color:var(--mut);font-size:.9rem}
+.bookpage .cover{max-width:240px;width:100%;height:auto;border-radius:10px;
+border:1px solid var(--line);margin:0 0 14px 18px;float:left}
+.ext{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:6px 14px;
+margin:4px 0 4px 6px;background:var(--card);text-decoration:none;color:var(--acc)!important}
+footer{margin-top:48px;border-top:1px solid var(--line);padding:16px 0;color:var(--mut);font-size:.85rem}
+@media(max-width:600px){.alpha{columns:1}.bookpage .cover{float:none;max-width:200px}}
